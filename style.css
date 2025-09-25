@@ -1,0 +1,158 @@
+body {
+    font-family: 'TT Lakes', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    font-family: "TT Lakes";
+    margin: auto;
+}
+h1{
+    border-left: 4px solid #41f6d7;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.tablet {
+    display: none !important;
+}
+.max {
+    display: none; !important;
+}
+.logot{
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.blabla {
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.blabla .Info {
+}
+
+.blabla  {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+}
+
+.logot{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tabs{
+    display: flex;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.tab{
+    min-width: 246px;
+    height: 40px;
+    color: #7e7e82;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px;
+    display: block;
+    border: none;
+    background-color: #f8f8f8;
+    margin: 20px 10px;
+}
+
+.tab:hover {
+    background-color: white;
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+}
+
+
+@media screen and (min-width: 767px) {
+    .tablet {
+        display: inline !important;
+    }
+    .blabla {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .Info {
+        flex: 1;
+        max-width: 60%;
+        line-height: 20px;
+    }
+
+    .imgg {
+        width:250%;
+
+    }
+}
+
+
+@media screen and (min-width: 1119px) {
+    .tablet {
+        display: none !important;}
+        .max {
+            display: inline !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .blabla {
+            max-height:100%;
+            flex-direction: row;
+        }
+    .tabs {
+        overflow: visible;
+        flex-wrap: wrap;}
+    .top-left {
+        display: none;
+        }
+    .top-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .most {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .tablet2{
+            display: none;
+        }
+    }
+    }
+
