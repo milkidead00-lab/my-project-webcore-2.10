@@ -95,7 +95,22 @@ h1{
     border: 2px solid #b8ffec;
     border-radius: 6px;
 }
-
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.hmost {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    margin: 25px 10px;
+}
+.actions{
+    display: none;
+}
 
 @media screen and (min-width: 767px) {
     .tablet {
@@ -120,9 +135,14 @@ h1{
 
     }
 }
-
+.space{
+    display: none;
+}
 
 @media screen and (min-width: 1119px) {
+    .actions{
+        display: flex;
+    }
     .tablet {
         display: none !important;}
         .max {
@@ -146,13 +166,21 @@ h1{
         margin-left: auto;
 
         .most {
-            display: flex;
+            display: none;
             align-items: center;
             gap: 8px;
         }
         .tablet2{
             display: none;
         }
+        .space{
+            display: flex;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+        }
     }
-    }
+
 
